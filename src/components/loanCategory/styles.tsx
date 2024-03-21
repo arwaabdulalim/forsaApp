@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 import {
   calcHeight,
   calcWidth,
@@ -13,13 +13,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: calcWidth(20),
     justifyContent: 'center',
     alignItems: 'center',
-    margin: calcWidth(4),
+    margin: Platform.OS === 'ios' ? calcWidth(5) : calcWidth(10),
   },
 
   loanTxt: {
     color: colors.white,
     fontSize: calcFont(14),
     textAlign: 'center',
+    fontFamily: 'segoeuithis',
   },
 });
 

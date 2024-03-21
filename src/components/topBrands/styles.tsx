@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
   imgWrapper: {
     justifyContent: 'center',
     alignItems: 'center',
-
     left: 10,
   },
   img: {

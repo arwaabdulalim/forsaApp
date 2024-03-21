@@ -66,7 +66,10 @@ const Home: React.FC = (props: any) => {
           <TopBrands />
           <View style={styles.bannerPosition}>
             <Banner />
-            <SectionHeader title={t('home.top-brands')} details="View all" />
+            <SectionHeader
+              title={t('home.top-brands')}
+              details={t('home.view-all')}
+            />
             {isSectorLoading ? (
               <ActivityIndicator color={colors.black} size={'small'} />
             ) : (
@@ -98,8 +101,11 @@ const Home: React.FC = (props: any) => {
             />
           )}
         </View>
-        <SectionHeader title="Request Additional Loan" details="See Less" />
-        <View style={styles.container}>
+        <SectionHeader
+          title={t('home.request-loan')}
+          details={t('home.see-less')}
+        />
+        <View style={styles.loansContainer}>
           {isLoansLoading ? (
             <ActivityIndicator color={colors.black} size={'large'} />
           ) : (
@@ -111,7 +117,10 @@ const Home: React.FC = (props: any) => {
             />
           )}
         </View>
-        <SectionHeader title="Offers Select for You" details="See Less" />
+        <SectionHeader
+          title={t('home.offers-for-you')}
+          details={t('home.see-all')}
+        />
         <View style={styles.container}>
           {isOffersLoading ? (
             <ActivityIndicator color={colors.black} size={'large'} />

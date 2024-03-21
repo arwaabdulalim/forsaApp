@@ -13,8 +13,8 @@ const Profile = () => {
 
   const getInitialLanguages = () => {
     return i18n.language === 'ar'
-      ? ['Arabic', 'English']
-      : ['English', 'Arabic'];
+      ? [t('home.arabic'), t('home.english')]
+      : [t('home.english'), t('home.arabic')];
   };
 
   const [languages, setLanguages] = useState(getInitialLanguages());
@@ -42,7 +42,11 @@ const Profile = () => {
           squreStyle: {height: '45%'},
           arcStyle: {height: '40%'},
         }}>
-        <Header showSearchIcon={false} contentType="text" content="Profile" />
+        <Header
+          showSearchIcon={false}
+          contentType="text"
+          content={t('home.profile')}
+        />
       </Arch>
       <View style={styles.userInfoWrapper}>
         <Image
@@ -50,16 +54,15 @@ const Profile = () => {
           style={styles.img}
           resizeMode="contain"
         />
-        <Text>Mohammed Adel</Text>
+        <Text>{t('home.Mohamed-Adel')}</Text>
       </View>
-      <Text style={styles.shareTxt}>Share the app</Text>
+      <Text style={styles.shareTxt}>{t('home.share-app')}</Text>
       <View style={styles.languageWrapper}>
         <Text>{t('home.change_language')}</Text>
         <View>
           <TouchableOpacity
             style={styles.selectorView}
-            onPress={() => setShowLanguages(!showLanguages)} // Toggle visibility
-          >
+            onPress={() => setShowLanguages(!showLanguages)}>
             <Text>{languages[0]}</Text>
             <Image
               source={require('../../assets/images/downArrow.png')}

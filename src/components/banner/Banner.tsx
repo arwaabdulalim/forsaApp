@@ -1,7 +1,9 @@
 import {View, Text, Image, ImageBackground} from 'react-native';
 import React from 'react';
 import styles from './styles';
+import {useTranslation} from 'react-i18next';
 const Banner: React.FC = (props: any) => {
+  const {t} = useTranslation();
   return (
     <View style={styles.imgWrapper}>
       <ImageBackground
@@ -13,7 +15,7 @@ const Banner: React.FC = (props: any) => {
           style={styles.brandImg}
           resizeMode="contain"
         />
-        <Text style={styles.title}>Check out latest offers</Text>
+        <Text style={styles.title}>{t('home.check-offers')}</Text>
         <Image
           source={require('../../assets/images/forwardArrow.png')}
           style={styles.arrow}

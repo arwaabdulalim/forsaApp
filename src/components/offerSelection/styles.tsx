@@ -46,11 +46,13 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: colors.gray,
     marginTop: calcWidth(7),
+    fontFamily: 'segoeuithis',
   },
   providerTxt: {
     fontSize: calcFont(14),
     textAlign: 'center',
     color: colors.black,
+    fontFamily: 'segoeuithis',
   },
 });
 

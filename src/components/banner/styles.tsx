@@ -8,18 +8,15 @@ import colors from '../../themes/colors';
 
 const styles = StyleSheet.create({
   imgWrapper: {
-    width: calcWidth(323),
+    width: calcWidth(315),
     height: calcHeight(140),
-    borderWidth: 3,
-    borderColor: colors.tiffany,
     justifyContent: 'center',
     alignItems: 'center',
-    alignSelf: 'center',
     borderRadius: 25,
   },
   img: {
-    width: '100%',
-    height: '100%',
+    width: calcWidth(315),
+    height: calcHeight(140),
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
@@ -27,7 +24,7 @@ const styles = StyleSheet.create({
   brandImg: {
     width: calcWidth(70),
     height: calcHeight(70),
-    marginRight: calcWidth(12),
+    marginHorizontal: calcWidth(25),
   },
   arrow: {
     width: calcWidth(4),

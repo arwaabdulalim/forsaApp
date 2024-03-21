@@ -1,6 +1,5 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 import {calcWidth} from '../../helpers/styles/responsive-helper.service';
-import colors from '../../themes/colors';
 
 const styles = StyleSheet.create({
   overlayContainer: {
@@ -13,6 +12,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  container: {marginHorizontal: calcWidth(25)},
+  container: {
+    marginHorizontal: Platform.OS === 'ios' ? calcWidth(25) : calcWidth(20),
+  },
+  loansContainer: {
+    marginHorizontal: Platform.OS === 'ios' ? calcWidth(25) : calcWidth(5),
+  },
 });
 export default styles;

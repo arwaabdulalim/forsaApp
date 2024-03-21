@@ -6,14 +6,23 @@
     "top-brands": "أفضل العلامات التجارية",
     "view-all": "عرض الكل",
     "request-loan": "اطلب قرضًا إضافيًا",
-    "see less": "شاهد أقل",
-    "see all": "شاهد الكل",
+    "see-less": "شاهد أقل",
+    "see-all": "شاهد الكل",
     "offers-for-you": "عروض مختارة لك",
     "all": "الكل",
     "fashion": "الموضة",
     "electronics": "الإلكترونيات",
     "furniture": "الأثاث",
     "travel": "السفر",
-    "change_language": "تغيير اللغة"
+    "change_language": "تغيير اللغة",
+    "home": "الرئيسية",
+    "retail": "التجزئة",
+    "offers": "العروض",
+    "profile": "الملف الشخصي",
+    "Mohamed-Adel": "محمد عادل",
+    "share-app": "شارك التطبيق",
+    "change-languague": "تغيير اللغة",
+    "english": "الإنجليزية",
+    "arabic": "العربية"
   }
 }

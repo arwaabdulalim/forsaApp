@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
   },
   userName: {
     fontSize: calcFont(14),
+    fontFamily: 'segoeuithis',
   },
   languageWrapper: {
     flexDirection: 'row',

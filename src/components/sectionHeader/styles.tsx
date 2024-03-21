@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'segoeuithibd',
     fontSize: calcFont(18),
+    color: colors.black,
   },
   seeTxt: {
     color: colors.black,

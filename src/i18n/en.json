@@ -6,14 +6,23 @@
     "top-brands": "Top brands in retail",
     "view-all": "View all",
     "request-loan": "Request Additional Loan",
-    "see less": "See Less",
-    "see all": "See All",
+    "see-less": "See Less",
+    "see-all": "See All",
     "offers-for-you": "Offers Selected for you",
     "all": "All",
     "fashion": "Fashion",
     "electronics": "Electronics",
     "furniture": "Furniture",
     "travel": "Travel",
-    "change_language": "change Language"
+    "change_language": "change Language",
+    "home": "Home",
+    "retail": "Retail",
+    "offers": "Offers",
+    "profile": "Profile",
+    "Mohamed-Adel": "Mohamed Adel",
+    "share-app": "Share the app",
+    "change-languague": "Change Language",
+    "english": "English",
+    "arabic": "Arabic"
   }
 }
